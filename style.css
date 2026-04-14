@@ -1,0 +1,112 @@
+/* બેઝિક સેટિંગ્સ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* હળવો ગ્રે બેકગ્રાઉન્ડ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* મેઈન કન્ટેનર */
+.quiz-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#question-box {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* ઓપ્શન્સ (List) ની ડિઝાઇન */
+#options {
+    list-style: none;
+    padding: 0;
+}
+
+/* આ સ્ટાઈલ ત્યારે લાગશે જ્યારે JavaScript થી <li> બનશે */
+#options li {
+    background-color: #e0e0e0;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+/* ક્લિક થાય ત્યારે કેવું દેખાશે */
+.selected {
+    background-color: #ffd700 !important; /* પીળો રંગ */
+    border-color: #ffa500 !important;
+    transform: scale(1.02); /* થોડું મોટું થશે */
+    font-weight: bold;
+}
+
+/* ઓપ્શન પર માઉસ લઈ જઈએ ત્યારે */
+li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+/* #options li:hover {
+    background-color:lightblue;
+    cursor: pointer;
+    
+} */
+
+/* સાચો જવાબ (જેમ કે ફોટામાં લીલો કલર છે) */
+#options li.correct {
+    background-color: #90be6d;
+    color: white;
+}
+
+/* Next બટન */
+#next-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#next-btn:hover {
+    background-color: #2980b9;
+}
+
+/* રિઝલ્ટ સેક્શન */
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* સંતાડવા માટે (Hide class) */
+.hide {
+    display: none;
+}
